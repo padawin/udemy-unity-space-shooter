@@ -508,6 +508,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distanceFromCenter: 3.4
+  speed: 15
 --- !u!1 &1899642877
 GameObject:
   m_ObjectHideFlags: 0

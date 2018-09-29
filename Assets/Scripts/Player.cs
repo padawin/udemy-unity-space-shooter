@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class Player : MonoBehaviour {
 	[SerializeField] float distanceFromCenter = 1f;
+	[SerializeField] float speed = 10;
+
+	float getDelta() {
+		return Input.GetAxis("Horizontal") * Time.deltaTime * speed;
+	}
 
 	void tilt() {
-		var deltaX = Input.GetAxis("Horizontal");
 		Quaternion newRotation = new Quaternion(
 			transform.rotation.x,
-			-deltaX * Mathf.PI / 8,
+			-getDelta() * Mathf.PI / 8,
 			transform.rotation.z,
 			transform.rotation.w
 		);
@@ -17,9 +21,8 @@ public class Player : MonoBehaviour {
 	}
 
 	void move () {
-		var deltaX = Input.GetAxis("Horizontal");
 		var newPosX = Mathf.Clamp(
-			transform.position.x + deltaX,
+			transform.position.x + getDelta(),
 			-distanceFromCenter,
 			distanceFromCenter
 		);

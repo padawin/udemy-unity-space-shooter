@@ -4,6 +4,18 @@ using UnityEngine;
 
 public class Player : MonoBehaviour {
 	[SerializeField] float distanceFromCenter = 1f;
+
+	void tilt() {
+		var deltaX = Input.GetAxis("Horizontal");
+		Quaternion newRotation = new Quaternion(
+			transform.rotation.x,
+			-deltaX * Mathf.PI / 8,
+			transform.rotation.z,
+			transform.rotation.w
+		);
+		transform.rotation = newRotation;
+	}
+
 	void move () {
 		var deltaX = Input.GetAxis("Horizontal");
 		var newPosX = Mathf.Clamp(
@@ -17,6 +29,7 @@ public class Player : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+		tilt();
 		move();
 	}
 }

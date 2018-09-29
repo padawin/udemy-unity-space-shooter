@@ -27,7 +27,7 @@ public class Player : MonoBehaviour {
 	void tilt() {
 		Quaternion newRotation = new Quaternion(
 			transform.rotation.x,
-			-getDelta() * Mathf.PI / 8,
+			-getDelta() * Mathf.PI / 2.5f,
 			transform.rotation.z,
 			transform.rotation.w
 		);

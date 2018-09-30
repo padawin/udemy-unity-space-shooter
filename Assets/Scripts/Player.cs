@@ -3,10 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour {
-	[SerializeField] float speed = 10;
+	[SerializeField] float coolDownSpeed = 200f;
+	[SerializeField] float speed = 10f;
+	[SerializeField] GameObject laserPrefab;
 
 	float xMin;
 	float xMax;
+
+	[SerializeField] float coolDownRatio = 0;
 
 	void Start() {
 		setWorldBoundaries();
@@ -40,9 +44,23 @@ public class Player : MonoBehaviour {
 		transform.position = newPos;
 	}
 
+	void fire() {
+		if (Input.GetButtonDown("Fire1")) {
+			if (coolDownRatio <= 0) {
+				Instantiate(laserPrefab, transform.position, Quaternion.identity);
+				coolDownRatio = 1090;
+			}
+		}
+
+		if (coolDownRatio > 0) {
+			coolDownRatio -= coolDownSpeed;
+		}
+	}
+
 	// Update is called once per frame
 	void Update () {
 		tilt();
 		move();
+		fire();
 	}
 }

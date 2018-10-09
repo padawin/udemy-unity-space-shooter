@@ -52,11 +52,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc0360b372f93114ca6c71f593cb8154, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coolDownSpeed: 200
+  timeBetweenShots: 0.09
   speed: 15
   laserPrefab: {fileID: 1766133261723408, guid: 23fdf50aad69be44194160c500b70778,
     type: 2}
-  coolDownRatio: 0
 --- !u!212 &212544765034806724
 SpriteRenderer:
   m_ObjectHideFlags: 1

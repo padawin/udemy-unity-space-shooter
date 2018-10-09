@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour {
-	[SerializeField] float coolDownSpeed = 200f;
+	[SerializeField] float timeBetweenShots = 0.5f;
 	[SerializeField] float speed = 10f;
 	[SerializeField] GameObject laserPrefab;
 
 	float xMin;
 	float xMax;
 
-	[SerializeField] float coolDownRatio = 0;
+	Coroutine fireCoroutine;
 
 	void Start() {
 		setWorldBoundaries();
@@ -46,14 +46,17 @@ public class Player : MonoBehaviour {
 
 	void fire() {
 		if (Input.GetButtonDown("Fire1")) {
-			if (coolDownRatio <= 0) {
-				Instantiate(laserPrefab, transform.position, Quaternion.identity);
-				coolDownRatio = 1090;
-			}
+			fireCoroutine = StartCoroutine(fireContinuously());
 		}
+		else if (Input.GetButtonUp("Fire1")) {
+			StopCoroutine(fireCoroutine);
+		}
+	}
 
-		if (coolDownRatio > 0) {
-			coolDownRatio -= coolDownSpeed;
+	IEnumerator fireContinuously() {
+		while (true) {
+			Instantiate(laserPrefab, transform.position, Quaternion.identity);
+			yield return new WaitForSeconds(timeBetweenShots);
 		}
 	}
 

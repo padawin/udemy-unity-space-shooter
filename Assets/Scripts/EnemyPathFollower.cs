@@ -27,11 +27,22 @@ public class EnemyPathFollower : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (!path || !moveTowardsNextWayPoint()) {
+		if (!path) {
 			return;
 		}
 
-		if (pastWayPoint()) {
+		enemyObject = GetComponent<Enemy>();
+		var next = getNextWayPoint();
+		if (next == null) {
+			Destroy(gameObject);
+			return;
+		}
+
+		transform.position = Vector2.MoveTowards(
+			transform.position, next.position, enemyObject.getSpeed()
+		);
+
+		if (next.position == transform.position) {
 			setNextWayPoint();
 		}
 	}
@@ -40,47 +51,6 @@ public class EnemyPathFollower : MonoBehaviour {
 		if (!path) {
 			return;
 		}
-		enemyObject = GetComponent<Enemy>();
-		var waypoint = getCurrentWayPoint();
-		Vector2 newPos = new Vector2(
-			waypoint.transform.position.x, waypoint.transform.position.y
-		);
-		transform.position = newPos;
-	}
-
-	bool moveTowardsNextWayPoint() {
-		var current = getCurrentWayPoint();
-		var next = getNextWayPoint();
-
-		if (next == null) {
-			Destroy(gameObject);
-			return false;
-		}
-
-		Vector2 direction = new Vector2(
-			next.position.x - current.position.x,
-			next.position.y - current.position.y
-		);
-		direction.Normalize();
-		direction *= enemyObject.getSpeed();
-		Vector2 newPos = new Vector2(
-			transform.position.x + direction.x, transform.position.y + direction.y
-		);
-		transform.position = newPos;
-		return true;
-	}
-
-	bool pastWayPoint() {
-		Transform current = getCurrentWayPoint(),
-			next = getNextWayPoint();
-
-		float distFromCurrent = new Vector2(
-			transform.position.x - current.position.x, transform.position.y - current.position.y
-		).magnitude;
-		float distWayPoints = new Vector2(
-			next.position.x - current.position.x, next.position.y - current.position.y
-		).magnitude;
-
-		return distFromCurrent > distWayPoints;
+		transform.position = getCurrentWayPoint().position;
 	}
 }

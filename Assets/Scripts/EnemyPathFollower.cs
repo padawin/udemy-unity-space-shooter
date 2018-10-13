@@ -3,10 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyPathFollower : MonoBehaviour {
-	[SerializeField] WaveConfig waveConfig;
 	int currentWayPoint = 0;
 
 	List<Transform> waypoints;
+	float speed;
+
+	public void setWaypoints(List<Transform> theWaypoints) {
+		waypoints = theWaypoints;
+	}
+
+	public void setSpeed(float theSpeed) {
+		speed = theSpeed;
+	}
 
 	public Transform getCurrentWayPoint() {
 		return waypoints[currentWayPoint];
@@ -25,7 +33,6 @@ public class EnemyPathFollower : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		waypoints = waveConfig.getWayPoints();
 		placeOnPath();
 	}
 	
@@ -38,7 +45,7 @@ public class EnemyPathFollower : MonoBehaviour {
 		}
 
 		transform.position = Vector2.MoveTowards(
-			transform.position, next.position, waveConfig.getEnemySpeed()
+			transform.position, next.position, speed
 		);
 
 		if (next.position == transform.position) {

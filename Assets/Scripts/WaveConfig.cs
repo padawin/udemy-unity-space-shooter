@@ -23,4 +23,16 @@ public class WaveConfig : ScriptableObject {
 	public float getEnemySpeed() {
 		return enemiesSpeed * Time.deltaTime;
 	}
+
+	public GameObject getEnemyPrefab() {
+		return enemyPrefab;
+	}
+
+	public float getTimeBeforeNextEnemy() {
+		return timeBetweenSpawn;
+	}
+
+	public int getNumberOfEnemies() {
+		return numberOfEnemies;
+	}
 }

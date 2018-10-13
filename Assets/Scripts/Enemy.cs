@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour {
-	[SerializeField] float speed = 0.009f;
+	[SerializeField] float speed = 5f;
 
 	public float getSpeed() {
-		return speed;
+		return speed * Time.deltaTime;
 	}
 }

@@ -578,16 +578,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a3287b359806af45941f9da36383e30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  path: {fileID: 114083278975005846, guid: 753225d2a15af154789756eda0901050, type: 2}
---- !u!114 &1765879392
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1765879388}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 033d2883d95d36644a9e4ee526cd0db3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
+  waveConfig: {fileID: 11400000, guid: 8d83e985d5a29b44083ac6aab21be6e1, type: 2}

@@ -3,17 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyPathFollower : MonoBehaviour {
-	[SerializeField] Path path;
+	[SerializeField] WaveConfig waveConfig;
 	int currentWayPoint = 0;
 
-	Enemy enemyObject;
+	List<Transform> waypoints;
 
 	public Transform getCurrentWayPoint() {
-		return path.getWaypointAt(currentWayPoint);
+		return waypoints[currentWayPoint];
 	}
 
 	public Transform getNextWayPoint() {
-		return path.getWaypointAt(currentWayPoint + 1);
+		if (currentWayPoint >= waypoints.Count - 1) {
+			return null;
+		}
+		return waypoints[currentWayPoint + 1];
 	}
 
 	public void setNextWayPoint() {
@@ -22,16 +25,12 @@ public class EnemyPathFollower : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		waypoints = waveConfig.getWayPoints();
 		placeOnPath();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (!path) {
-			return;
-		}
-
-		enemyObject = GetComponent<Enemy>();
 		var next = getNextWayPoint();
 		if (next == null) {
 			Destroy(gameObject);
@@ -39,7 +38,7 @@ public class EnemyPathFollower : MonoBehaviour {
 		}
 
 		transform.position = Vector2.MoveTowards(
-			transform.position, next.position, enemyObject.getSpeed()
+			transform.position, next.position, waveConfig.getEnemySpeed()
 		);
 
 		if (next.position == transform.position) {
@@ -48,9 +47,6 @@ public class EnemyPathFollower : MonoBehaviour {
 	}
 
 	void placeOnPath() {
-		if (!path) {
-			return;
-		}
 		transform.position = getCurrentWayPoint().position;
 	}
 }

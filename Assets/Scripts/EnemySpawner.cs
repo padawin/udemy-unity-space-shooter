@@ -8,10 +8,16 @@ public class EnemySpawner : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		StartCoroutine(SpawnEnemies(waveConfigs[0]));
+		StartCoroutine(spawnWaves());
 	}
 
-	IEnumerator SpawnEnemies(WaveConfig waveConfig) {
+	IEnumerator spawnWaves() {
+		foreach (WaveConfig waveConfig in waveConfigs) {
+			yield return StartCoroutine(spawnEnemies(waveConfig));
+        }
+    }
+
+	IEnumerator spawnEnemies(WaveConfig waveConfig) {
 		int numberOfEnemies = waveConfig.getNumberOfEnemies();
 		for (int spawnedEnemies = 0; spawnedEnemies < numberOfEnemies; spawnedEnemies++) {
 			var enemy = Instantiate(

@@ -4,16 +4,19 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour {
 	[SerializeField] List<WaveConfig> waveConfigs;
-	int currentWaveIndex = 0;
+	int startWaveIndex = 0;
+	[SerializeField] bool looping = false;
 
 	// Use this for initialization
-	void Start () {
-		StartCoroutine(spawnWaves());
+	IEnumerator Start () {
+		do {
+			yield return StartCoroutine(spawnWaves());
+		} while (looping);
 	}
 
 	IEnumerator spawnWaves() {
-		foreach (WaveConfig waveConfig in waveConfigs) {
-			yield return StartCoroutine(spawnEnemies(waveConfig));
+		for (int waveIndex = startWaveIndex; waveIndex < waveConfigs.Count; waveIndex++) {
+			yield return StartCoroutine(spawnEnemies(waveConfigs[waveIndex]));
         }
     }
 

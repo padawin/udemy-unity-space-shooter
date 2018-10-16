@@ -5,22 +5,23 @@ using UnityEngine;
 public class EnemyPathFollower : MonoBehaviour {
 	int currentWayPoint = 0;
 
-	List<Transform> waypoints;
+    WaveConfig waveConfig;
 	float speed;
 
-	public void setWaypoints(List<Transform> theWaypoints) {
-		waypoints = theWaypoints;
+	public void setWaveConfig(WaveConfig waveConfig) {
+		this.waveConfig = waveConfig;
 	}
 
-	public void setSpeed(float theSpeed) {
-		speed = theSpeed;
+	public void setSpeed(float speed) {
+		this.speed = speed;
 	}
 
 	public Transform getCurrentWayPoint() {
-		return waypoints[currentWayPoint];
+		return waveConfig.getWaypoints()[currentWayPoint];
 	}
 
 	public Transform getNextWayPoint() {
+        List<Transform> waypoints = waveConfig.getWaypoints();
 		if (currentWayPoint >= waypoints.Count - 1) {
 			return null;
 		}
@@ -45,7 +46,7 @@ public class EnemyPathFollower : MonoBehaviour {
 		}
 
 		transform.position = Vector2.MoveTowards(
-			transform.position, next.position, speed
+			transform.position, next.position, waveConfig.getEnemySpeed()
 		);
 
 		if (next.position == transform.position) {

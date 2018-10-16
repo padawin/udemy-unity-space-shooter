@@ -16,11 +16,10 @@ public class EnemySpawner : MonoBehaviour {
 		for (int spawnedEnemies = 0; spawnedEnemies < numberOfEnemies; spawnedEnemies++) {
 			var enemy = Instantiate(
 				waveConfig.getEnemyPrefab(),
-				waveConfig.getWayPoints()[0].transform.position,
+				waveConfig.getWaypoints()[0].transform.position,
 				Quaternion.identity
 			);
-			enemy.GetComponent<EnemyPathFollower>().setWaypoints(waveConfig.getWayPoints());
-			enemy.GetComponent<EnemyPathFollower>().setSpeed(waveConfig.getEnemySpeed());
+			enemy.GetComponent<EnemyPathFollower>().setWaveConfig(waveConfig);
 			yield return new WaitForSeconds(waveConfig.getTimeBeforeNextEnemy());
 		}
 	}

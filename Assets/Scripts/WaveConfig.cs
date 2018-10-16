@@ -12,7 +12,7 @@ public class WaveConfig : ScriptableObject {
 	[SerializeField] int numberOfEnemies = 5;
 	[SerializeField] float enemiesSpeed = 5f;
 
-	public List<Transform> getWayPoints() {
+	public List<Transform> getWaypoints() {
 		List<Transform> waypoints = new List<Transform>();
 		foreach (Transform child in path.transform) {
 			waypoints.Add(child);

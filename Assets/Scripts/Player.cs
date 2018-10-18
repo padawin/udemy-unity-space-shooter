@@ -3,24 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour {
-	[SerializeField] float timeBetweenShots = 0.5f;
-	[SerializeField] GameObject laserPrefab;
+	Gun gun;
 
-	Coroutine fireCoroutine;
+	void Start() {
+		gun = GetComponentInChildren<Gun>();
+	}
 
 	void fire() {
 		if (Input.GetButtonDown("Fire1")) {
-			fireCoroutine = StartCoroutine(fireContinuously());
+			gun.fire();
 		}
 		else if (Input.GetButtonUp("Fire1")) {
-			StopCoroutine(fireCoroutine);
-		}
-	}
-
-	IEnumerator fireContinuously() {
-		while (true) {
-			Instantiate(laserPrefab, transform.position, Quaternion.identity);
-			yield return new WaitForSeconds(timeBetweenShots);
+			gun.stopFire();
 		}
 	}
 

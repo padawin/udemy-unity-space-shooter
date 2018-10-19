@@ -1,16 +1,26 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyFireOnSight : MonoBehaviour {
+	CircleCollider2D player;
+	Gun gun;
 
-	// Use this for initialization
-	void Start () {
-		
+	void Start() {
+		player = FindObjectOfType<PlayerMovement>().GetComponent<CircleCollider2D>();
+		gun = GetComponentInChildren<Gun>();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+
+	void Update() {
+		if (
+			transform.position.x > player.transform.position.x - player.radius
+			&&
+			transform.position.x < player.transform.position.x + player.radius
+		) {
+			gun.fire();
+		}
+		else {
+			gun.stopFire();
+		}
 	}
 }

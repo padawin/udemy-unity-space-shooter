@@ -4,24 +4,27 @@ using UnityEngine;
 
 public class ContinuousGun : Gun {
 	[SerializeField] float timeBetweenShots = 0.5f;
-	Coroutine fireCoroutine;
 
-	public bool isFiring() {
-		return fireCoroutine != null;
-	}
+	private bool isFiring;
 
-	public override void fire() {
-		fireCoroutine = StartCoroutine(fireContinuously());
-	}
+	IEnumerator Start() {
+		WaitForSeconds delay = new WaitForSeconds(timeBetweenShots);
 
-	public IEnumerator fireContinuously() {
 		while (true) {
-			_fire();
-			yield return new WaitForSeconds(timeBetweenShots);
+			while (isFiring) {
+				_fire();
+				yield return delay;
+			}
+
+			yield return null; // <--- wait for the next frame
 		}
 	}
 
+	public override void fire() {
+		isFiring = true;
+	}
+
 	public override void stopFire() {
-		StopCoroutine(fireCoroutine);
+		isFiring = false;
 	}
 }

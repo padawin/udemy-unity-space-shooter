@@ -11,10 +11,6 @@ public abstract class Gun : MonoBehaviour {
 		laser.GetComponent<Laser>().setVelocity(gunDirection);
 	}
 
-	public bool isFiring() {
-		return false;
-	}
-
 	public abstract void fire();
 	public abstract void stopFire();
 }

@@ -12,8 +12,6 @@ public class EnemyFireContinuous : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (!gun.isFiring()) {
-			gun.fire();
-		}
+		gun.fire();
 	}
 }

@@ -20,8 +20,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4582044037532160}
   - component: {fileID: 212544765034806724}
-  - component: {fileID: 114561920870722476}
   - component: {fileID: 114671946356185816}
+  - component: {fileID: 114096258921040918}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -86,7 +86,7 @@ MonoBehaviour:
   laserPrefab: {fileID: 1766133261723408, guid: 23fdf50aad69be44194160c500b70778,
     type: 2}
   timeBetweenShots: 0.1
---- !u!114 &114561920870722476
+--- !u!114 &114096258921040918
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -94,7 +94,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1023651662003294}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc0360b372f93114ca6c71f593cb8154, type: 3}
+  m_Script: {fileID: 11500000, guid: 5289253f033d1ea46a3218352a62f6d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &114671946356185816

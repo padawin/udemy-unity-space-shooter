@@ -103,7 +103,7 @@ MonoBehaviour:
   laserPrefab: {fileID: 1766133261723408, guid: 23fdf50aad69be44194160c500b70778,
     type: 2}
   gunDirection: {x: 0, y: -1}
-  timeBetweenShots: 0.5
+  timeBetweenShots: 0.8
 --- !u!114 &114384089479804542
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -24,8 +24,8 @@ GameObject:
   - component: {fileID: 50624592788173214}
   - component: {fileID: 61699021461592440}
   - component: {fileID: 114088884557709262}
-  m_Layer: 0
-  m_Name: laserRed01
+  m_Layer: 11
+  m_Name: EnemylaserRed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

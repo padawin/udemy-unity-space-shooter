@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 58289321910049074}
   - component: {fileID: 114785776561354692}
   - component: {fileID: 114147425844341736}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: enemyGreen2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4625194354652848}
   - component: {fileID: 114191895041912104}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LaserGatling
   m_TagString: Untagged
   m_Icon: {fileID: 0}

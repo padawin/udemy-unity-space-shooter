@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyHealth : MonoBehaviour {
+public class ActorHealth : MonoBehaviour {
 	[SerializeField] int health = 100;
 
 	public void hit(DamageDealer damageDealer) {

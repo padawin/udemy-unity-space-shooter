@@ -22,6 +22,8 @@ GameObject:
   - component: {fileID: 212544765034806724}
   - component: {fileID: 114671946356185816}
   - component: {fileID: 114096258921040918}
+  - component: {fileID: 114954383506739088}
+  - component: {fileID: 58453659408695702}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -72,6 +74,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &58453659408695702
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1023651662003294}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.495
 --- !u!114 &114028767784774238
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -110,6 +127,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 15
+--- !u!114 &114954383506739088
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1023651662003294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c74c1594c9544804d8d6a9b77a198154, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 400
 --- !u!212 &212544765034806724
 SpriteRenderer:
   m_ObjectHideFlags: 1

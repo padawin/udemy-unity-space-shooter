@@ -21,9 +21,9 @@ GameObject:
   - component: {fileID: 4152241568432414}
   - component: {fileID: 212828220690550200}
   - component: {fileID: 114738769085709304}
-  - component: {fileID: 114344448846178496}
   - component: {fileID: 58289321910049074}
   - component: {fileID: 114785776561354692}
+  - component: {fileID: 114147425844341736}
   m_Layer: 0
   m_Name: enemyGreen2
   m_TagString: Untagged
@@ -89,6 +89,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.485
+--- !u!114 &114147425844341736
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1156274871283732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c74c1594c9544804d8d6a9b77a198154, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 200
 --- !u!114 &114191895041912104
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -104,18 +116,6 @@ MonoBehaviour:
     type: 2}
   gunDirection: {x: 0, y: -1}
   timeBetweenShots: 0.5
---- !u!114 &114344448846178496
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1156274871283732}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97dda372ecec60c4d8f45664aebbe528, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 200
 --- !u!114 &114738769085709304
 MonoBehaviour:
   m_ObjectHideFlags: 1

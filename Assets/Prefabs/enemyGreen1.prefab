@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 58121992876451854}
   - component: {fileID: 114895001270418262}
   - component: {fileID: 114384089479804542}
+  - component: {fileID: 114292534717220620}
   m_Layer: 9
   m_Name: enemyGreen1
   m_TagString: Untagged
@@ -104,6 +105,18 @@ MonoBehaviour:
     type: 2}
   gunDirection: {x: 0, y: -1}
   timeBetweenShots: 0.8
+--- !u!114 &114292534717220620
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1156274871283732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fda87e3af982a784f92bbdcefb147253, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion: {fileID: 1970807212555422, guid: ffe2820729218624e99d52fcb350131b, type: 2}
 --- !u!114 &114384089479804542
 MonoBehaviour:
   m_ObjectHideFlags: 1

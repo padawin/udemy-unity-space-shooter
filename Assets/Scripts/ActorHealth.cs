@@ -7,9 +7,6 @@ public class ActorHealth : MonoBehaviour {
 
 	public void hit(DamageDealer damageDealer) {
 		health -= damageDealer.getDamages();
-		if (health < 0) {
-			Destroy(gameObject);
-		}
 	}
 
 	void OnTriggerEnter2D(Collider2D collider) {
@@ -20,5 +17,9 @@ public class ActorHealth : MonoBehaviour {
 
 		hit(damageDealer);
 		damageDealer.hit();
+	}
+
+	public int getHealth() {
+		return health;
 	}
 }

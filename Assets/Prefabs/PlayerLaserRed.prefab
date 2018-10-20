@@ -101,6 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damages: 50
+  explosion: {fileID: 1970807212555422, guid: ffe2820729218624e99d52fcb350131b, type: 2}
 --- !u!114 &114234922905255698
 MonoBehaviour:
   m_ObjectHideFlags: 1

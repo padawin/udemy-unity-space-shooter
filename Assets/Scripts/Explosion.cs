@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ExplosionParticle : MonoBehaviour {
-
+public class Explosion : MonoBehaviour {
 	// Use this for initialization
+
 	void Start () {
 		Destroy(
 			gameObject,
-			GetComponent<ParticleSystem>().main.duration
+			GetComponent<Animator>().runtimeAnimatorController.animationClips[0].length
 		);
 	}
 }

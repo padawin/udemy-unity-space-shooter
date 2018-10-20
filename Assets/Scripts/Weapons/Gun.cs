@@ -6,16 +6,13 @@ public abstract class Gun : MonoBehaviour {
 	[SerializeField] GameObject laserPrefab;
 	[SerializeField] Vector2 gunDirection;
 
-	AudioSource audioSource;
-
-	protected void Start() {
-		audioSource = GetComponent<AudioSource>();
-	}
+	[SerializeField] AudioClip audio;
+	[SerializeField][Range(0, 1)] float soundVolume = 1;
 
 	protected void _fire() {
-		if (audioSource) {
-			audioSource.PlayOneShot(audioSource.clip);
-		}
+		AudioSource.PlayClipAtPoint(
+			audio, Camera.main.transform.position, soundVolume
+		);
 		Quaternion rotation = Quaternion.identity;
 		rotation.z = Mathf.Acos(gunDirection.y) * 180 / Mathf.PI;
 		GameObject laser = Instantiate(laserPrefab, transform.position, rotation);

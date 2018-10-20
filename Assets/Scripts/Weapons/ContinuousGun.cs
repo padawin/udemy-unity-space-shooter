@@ -8,6 +8,7 @@ public class ContinuousGun : Gun {
 	private bool isFiring;
 
 	IEnumerator Start() {
+		base.Start();
 		WaitForSeconds delay = new WaitForSeconds(timeBetweenShots);
 
 		while (true) {

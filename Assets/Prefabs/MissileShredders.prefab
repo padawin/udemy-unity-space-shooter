@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4509773694429752}
   - component: {fileID: 61002473387468386}
   - component: {fileID: 114509622662195930}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: MissileShredderTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36,7 +36,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4031788537597298}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: MissileShredders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52,7 +52,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4725790093172430}
   - component: {fileID: 61721567641556744}
-  m_Layer: 0
+  - component: {fileID: 114082706141755868}
+  m_Layer: 12
   m_Name: MissileShredderBottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68,7 +69,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4191813695361690}
   - component: {fileID: 61096381757106792}
-  m_Layer: 0
+  - component: {fileID: 114762739022017130}
+  m_Layer: 12
   m_Name: MissileShredderLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,7 +86,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4198855459231952}
   - component: {fileID: 61071929641533634}
-  m_Layer: 0
+  - component: {fileID: 114056743998436114}
+  m_Layer: 12
   m_Name: MissileShredderRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,12 +263,45 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &114056743998436114
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1813810903617498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa938b23b9f680d41869cb52a14cf1d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114082706141755868
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1543654626959656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa938b23b9f680d41869cb52a14cf1d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114509622662195930
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1098927336217026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa938b23b9f680d41869cb52a14cf1d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114762739022017130
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1620240478966584}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aa938b23b9f680d41869cb52a14cf1d1, type: 3}

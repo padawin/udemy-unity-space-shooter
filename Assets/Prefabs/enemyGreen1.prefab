@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4423943606899864}
-  - component: {fileID: 114350717694717078}
+  - component: {fileID: 114708122006903522}
   m_Layer: 0
   m_Name: WeaponMachineGun
   m_TagString: Untagged
@@ -102,23 +102,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosion: {fileID: 1237345852854864, guid: 040db3b32ae38fc4ab18031601d2a18e, type: 2}
---- !u!114 &114350717694717078
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1195684328369004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa1c6c9c590102f4fbe9c85b214f7d51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  laserPrefab: {fileID: 1766133261723408, guid: 23fdf50aad69be44194160c500b70778,
-    type: 2}
-  gunDirection: {x: 0, y: -1}
-  gunSound: {fileID: 8300000, guid: 68b49238ee980024c85cda4aef040c6b, type: 3}
-  soundVolume: 0.18
-  timeBetweenShots: 0.8
 --- !u!114 &114384089479804542
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -131,6 +114,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+--- !u!114 &114708122006903522
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1195684328369004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc95419f2f6c8ea4bac48d73ba1fcd0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laserPrefab: {fileID: 1766133261723408, guid: 23fdf50aad69be44194160c500b70778,
+    type: 2}
+  gunDirection: {x: 0, y: -1}
+  gunSound: {fileID: 8300000, guid: 68b49238ee980024c85cda4aef040c6b, type: 3}
+  soundVolume: 0.27
 --- !u!114 &114738769085709304
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -153,6 +152,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20b6e687ec9cb454caae31aedd0068d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  minTimeBetweenShots: 0.2
+  maxTimeBetweenShots: 3
 --- !u!212 &212828220690550200
 SpriteRenderer:
   m_ObjectHideFlags: 1

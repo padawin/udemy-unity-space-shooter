@@ -411,12 +411,6 @@ Prefab:
       propertyPath: sceneLoader
       value: 
       objectReference: {fileID: 170937829}
-    - target: {fileID: 114845736766140040, guid: 721bfda577002334c992a32a254c8b5b,
-        type: 2}
-      propertyPath: explosion
-      value: 
-      objectReference: {fileID: 1237345852854864, guid: 040db3b32ae38fc4ab18031601d2a18e,
-        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 721bfda577002334c992a32a254c8b5b, type: 2}
   m_IsPrefabAsset: 0

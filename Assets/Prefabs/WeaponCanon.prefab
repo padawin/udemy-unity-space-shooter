@@ -53,6 +53,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laserPrefab: {fileID: 0}
   gunDirection: {x: 0, y: 0}
-  audio: {fileID: 8300000, guid: f86ea07708f5480438719a15c355ba04, type: 3}
+  gunSound: {fileID: 8300000, guid: f86ea07708f5480438719a15c355ba04, type: 3}
   soundVolume: 0.3
   timeBetweenShots: 2

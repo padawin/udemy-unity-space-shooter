@@ -8,7 +8,7 @@ public class WaveConfig : ScriptableObject {
 	[SerializeField] GameObject path;
 	[SerializeField] float timeBetweenSpawn = 0.5f;
 	// Random delta to apply to time between spawn for not quite regular spawning
-	[SerializeField] float spawnRandomFactor = 0.3f;
+	[SerializeField] float spawnRandomFactor = 0.5f;
 	[SerializeField] int numberOfEnemies = 5;
 	[SerializeField] float enemiesSpeed = 5f;
 
@@ -29,7 +29,7 @@ public class WaveConfig : ScriptableObject {
 	}
 
 	public float getTimeBeforeNextEnemy() {
-		return timeBetweenSpawn;
+		return timeBetweenSpawn + Random.Range(-spawnRandomFactor, spawnRandomFactor);
 	}
 
 	public int getNumberOfEnemies() {

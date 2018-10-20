@@ -6,14 +6,9 @@ public class EnemyPathFollower : MonoBehaviour {
 	int currentWayPoint = 0;
 
     WaveConfig waveConfig;
-	float speed;
 
 	public void setWaveConfig(WaveConfig waveConfig) {
 		this.waveConfig = waveConfig;
-	}
-
-	public void setSpeed(float speed) {
-		this.speed = speed;
 	}
 
 	public Transform getCurrentWayPoint() {

@@ -115,7 +115,7 @@ MonoBehaviour:
   laserPrefab: {fileID: 1766133261723408, guid: b210dd9ad7e3123478c5e5b97c4ac8b1,
     type: 2}
   gunDirection: {x: 0, y: 1}
-  audio: {fileID: 8300000, guid: 1797120dacd347842b36e7c3b630c93e, type: 3}
+  gunSound: {fileID: 8300000, guid: 1797120dacd347842b36e7c3b630c93e, type: 3}
   soundVolume: 0.1
   timeBetweenShots: 0.1
 --- !u!114 &114671946356185816
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneLoader: {fileID: 0}
-  explosion: {fileID: 0}
+  explosion: {fileID: 1237345852854864, guid: 040db3b32ae38fc4ab18031601d2a18e, type: 2}
   timeBeforeGameOver: 5
 --- !u!114 &114954383506739088
 MonoBehaviour:

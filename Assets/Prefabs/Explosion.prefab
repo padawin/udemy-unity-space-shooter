@@ -71,6 +71,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edaea0aeca3a1ab44b49368d905ce3e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathSound: {fileID: 8300000, guid: 2d765e21e1169a34f816f8e77f7d13e7, type: 3}
+  soundVolume: 0.5
 --- !u!212 &212301631638703798
 SpriteRenderer:
   m_ObjectHideFlags: 1

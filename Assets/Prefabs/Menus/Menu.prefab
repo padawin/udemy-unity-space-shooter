@@ -40,13 +40,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activeItemColor:
     serializedVersion: 2
-    rgba: 0
+    rgba: 4280727797
   inactiveItemColor:
     serializedVersion: 2
-    rgba: 0
-  items:
-  - {fileID: 0}
-  - {fileID: 0}
+    rgba: 4293059298
+  items: []
 --- !u!224 &224045424443326244
 RectTransform:
   m_ObjectHideFlags: 1

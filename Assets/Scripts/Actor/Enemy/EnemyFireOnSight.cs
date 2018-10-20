@@ -7,11 +7,18 @@ public class EnemyFireOnSight : MonoBehaviour {
 	Gun gun;
 
 	void Start() {
-		player = FindObjectOfType<PlayerMovement>().GetComponent<CircleCollider2D>();
+		PlayerMovement pm = FindObjectOfType<PlayerMovement>();
+		if (pm) {
+			player = FindObjectOfType<PlayerMovement>().GetComponent<CircleCollider2D>();
+		}
 		gun = GetComponentInChildren<Gun>();
 	}
 
 	void Update() {
+		if (!player) {
+			return;
+		}
+
 		if (
 			transform.position.x > player.transform.position.x - player.radius
 			&&

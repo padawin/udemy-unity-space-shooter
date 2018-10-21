@@ -3,7 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ActorHealth : MonoBehaviour {
-	[SerializeField] int health = 100;
+	[SerializeField] int maxHealth = 100;
+	int health;
+
+	void Start() {
+		health = maxHealth;
+	}
 
 	public void hit(DamageDealer damageDealer) {
 		health -= damageDealer.getDamages();
@@ -21,5 +26,9 @@ public class ActorHealth : MonoBehaviour {
 
 	public int getHealth() {
 		return health;
+	}
+
+	public int getMaxHealth() {
+		return maxHealth;
 	}
 }

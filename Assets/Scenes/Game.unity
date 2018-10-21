@@ -471,10 +471,10 @@ RectTransform:
   m_Father: {fileID: 1410117098}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -4.606513, y: -858.9999}
-  m_SizeDelta: {x: 500.8, y: 100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 535.3935, y: -858.9999}
+  m_SizeDelta: {x: -579.2, y: -1818}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &641821229
 MonoBehaviour:
@@ -805,8 +805,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1.9000244, y: 888.1}
-  m_SizeDelta: {x: -65, y: -1820.9}
+  m_AnchoredPosition: {x: 1.9000244, y: 889.6}
+  m_SizeDelta: {x: -65, y: -1823.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1107906757
 MonoBehaviour:
@@ -873,7 +873,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 0
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -1022,10 +1022,10 @@ RectTransform:
   m_Father: {fileID: 1410117098}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 245.8, y: -859}
-  m_SizeDelta: {x: 500.8, y: 100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 245.79999, y: -859}
+  m_SizeDelta: {x: -579.2, y: -1818}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1626543703
 MonoBehaviour:

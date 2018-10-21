@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerDeath : MonoBehaviour {
 	[SerializeField] SceneLoader sceneLoader;
 	[SerializeField] GameObject explosion;
-	[SerializeField] float timeBeforeGameOver = 5;
+	[SerializeField] float timeBeforeGameOver = 3;
 	ActorHealth playerHealth;
 
 	// Use this for initialization
@@ -19,8 +19,8 @@ public class PlayerDeath : MonoBehaviour {
 			return;
 		}
 
-		Destroy(gameObject, timeBeforeGameOver);
+		Destroy(gameObject);
 		Instantiate(explosion, transform.position, transform.rotation);
-		sceneLoader.loadSceneFromName("GameOver");
+		sceneLoader.loadSceneFromName("GameOver", timeBeforeGameOver);
 	}
 }

@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 
@@ -27,9 +28,19 @@ public class SceneLoader : MonoBehaviour {
 		_loadScene(index);
 	}
 
-	public void loadSceneFromName(string name) {
-		lastLoadedSceneIndex = SceneManager.GetActiveScene().buildIndex;
-		SceneManager.LoadScene(name);
+	public void loadSceneFromName(string name, float delay=0f) {
+		if (delay > 0f) {
+			StartCoroutine(loadDelayedScene(name, delay));
+		}
+		else {
+			lastLoadedSceneIndex = SceneManager.GetActiveScene().buildIndex;
+			SceneManager.LoadScene(name);
+		}
+	}
+
+	public IEnumerator loadDelayedScene(string name, float delay) {
+		yield return new WaitForSeconds(delay);
+		loadSceneFromName(name);
 	}
 
 	public void quit() {

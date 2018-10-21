@@ -143,7 +143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneLoader: {fileID: 0}
   explosion: {fileID: 1237345852854864, guid: 040db3b32ae38fc4ab18031601d2a18e, type: 2}
-  timeBeforeGameOver: 5
+  timeBeforeGameOver: 3
 --- !u!114 &114954383506739088
 MonoBehaviour:
   m_ObjectHideFlags: 1

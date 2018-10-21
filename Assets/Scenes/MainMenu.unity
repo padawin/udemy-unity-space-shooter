@@ -1008,6 +1008,53 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1320838643}
   m_CullTransparentMesh: 0
+--- !u!1001 &1503471880
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4176435009098224, guid: f62b49b3543af6b449fd833fcdd080a6, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4176435009098224, guid: f62b49b3543af6b449fd833fcdd080a6, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4176435009098224, guid: f62b49b3543af6b449fd833fcdd080a6, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4176435009098224, guid: f62b49b3543af6b449fd833fcdd080a6, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4176435009098224, guid: f62b49b3543af6b449fd833fcdd080a6, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4176435009098224, guid: f62b49b3543af6b449fd833fcdd080a6, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4176435009098224, guid: f62b49b3543af6b449fd833fcdd080a6, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4176435009098224, guid: f62b49b3543af6b449fd833fcdd080a6, type: 2}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 82178721391692034, guid: f62b49b3543af6b449fd833fcdd080a6,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: bd9a570af15ca3e4aad8458f84c5b5ef, type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f62b49b3543af6b449fd833fcdd080a6, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &1683030263 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1916369811978560, guid: 4147797e941924144aeae21331ee46af,

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ActorHealthDisplay : MonoBehaviour {
-	[SerializeField] ActorHealth heathToWatch;
+	[SerializeField] ActorHealth healthToWatch;
 	float maxSize;
 
 	// Use this for initialization
@@ -15,7 +15,7 @@ public class ActorHealthDisplay : MonoBehaviour {
 	void Update () {
 		float width = Mathf.Max(
 			0,
-			heathToWatch.getHealth() * maxSize / heathToWatch.getMaxHealth()
+			healthToWatch.getHealth() * maxSize / healthToWatch.getMaxHealth()
 			);
 		Vector2 newSize = new Vector2(width, transform.localScale.y);
 		transform.localScale = newSize;

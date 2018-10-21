@@ -214,7 +214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9c3ad91272fa294b99982bc682a5a58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heathToWatch: {fileID: 114384089479804542}
+  healthToWatch: {fileID: 114384089479804542}
 --- !u!212 &212355389469002118
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class EnemySpawner : MonoBehaviour {
 	[SerializeField] List<WaveConfig> waveConfigs;
@@ -21,6 +22,7 @@ public class EnemySpawner : MonoBehaviour {
     }
 
 	IEnumerator spawnEnemies(WaveConfig waveConfig) {
+		List<GameObject> enemies = new List<GameObject>();
 		int numberOfEnemies = waveConfig.getNumberOfEnemies();
 		for (int spawnedEnemies = 0; spawnedEnemies < numberOfEnemies; spawnedEnemies++) {
 			var enemy = Instantiate(
@@ -29,7 +31,11 @@ public class EnemySpawner : MonoBehaviour {
 				Quaternion.identity
 			);
 			enemy.GetComponent<EnemyPathFollower>().setWaveConfig(waveConfig);
+			enemies.Add(enemy);
 			yield return new WaitForSeconds(waveConfig.getTimeBeforeNextEnemy());
+		}
+		if (waveConfig.waitUntilDefeated()) {
+			yield return new WaitUntil(() => !enemies.Any(x => x != null));
 		}
 	}
 }

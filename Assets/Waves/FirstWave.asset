@@ -18,3 +18,5 @@ MonoBehaviour:
   spawnRandomFactor: 0.3
   numberOfEnemies: 5
   enemiesSpeed: 5
+  _waitUntilDefeated: 1
+  _destroyAtArrival: 1

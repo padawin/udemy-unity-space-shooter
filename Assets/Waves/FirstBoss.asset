@@ -9,14 +9,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 398364e359a8f9645ae086ed2ab99532, type: 3}
-  m_Name: SecondWave
+  m_Name: FirstBoss
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 1156274871283732, guid: 8e1e3dee14be4be4a9cfd3c188b420c9,
+  enemyPrefab: {fileID: 1330454962217546, guid: 048cea16319532f458497fdc289d04e9,
     type: 2}
-  path: {fileID: 1899599780879180, guid: feed6105775910e4ea6a0907d8b21597, type: 2}
+  path: {fileID: 1497315733513548, guid: 9a48116260399a34d9f638354c591ae4, type: 2}
   timeBetweenSpawn: 0.5
-  spawnRandomFactor: 0.3
-  numberOfEnemies: 5
-  enemiesSpeed: 5
+  spawnRandomFactor: 0.5
+  numberOfEnemies: 1
+  enemiesSpeed: 2
   _waitUntilDefeated: 1
-  _destroyAtArrival: 1
+  _destroyAtArrival: 0

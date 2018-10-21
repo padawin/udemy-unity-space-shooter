@@ -11,6 +11,8 @@ public class WaveConfig : ScriptableObject {
 	[SerializeField] float spawnRandomFactor = 0.5f;
 	[SerializeField] int numberOfEnemies = 5;
 	[SerializeField] float enemiesSpeed = 5f;
+	[SerializeField] bool _waitUntilDefeated = false;
+	[SerializeField] bool _destroyAtArrival = true;
 
 	public List<Transform> getWaypoints() {
 		List<Transform> waypoints = new List<Transform>();
@@ -34,5 +36,13 @@ public class WaveConfig : ScriptableObject {
 
 	public int getNumberOfEnemies() {
 		return numberOfEnemies;
+	}
+
+	public bool waitUntilDefeated() {
+		return _waitUntilDefeated;
+	}
+
+	public bool destroyAtArrival() {
+		return _destroyAtArrival;
 	}
 }

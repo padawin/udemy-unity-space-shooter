@@ -36,7 +36,9 @@ public class EnemyPathFollower : MonoBehaviour {
 	void Update () {
 		var next = getNextWayPoint();
 		if (next == null) {
-			Destroy(gameObject);
+			if (waveConfig.destroyAtArrival()) {
+				Destroy(gameObject);
+			}
 			return;
 		}
 

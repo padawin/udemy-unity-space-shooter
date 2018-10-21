@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4509773694429752}
   - component: {fileID: 61002473387468386}
   - component: {fileID: 114509622662195930}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: MissileShredderTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53,7 +53,7 @@ GameObject:
   - component: {fileID: 4725790093172430}
   - component: {fileID: 61721567641556744}
   - component: {fileID: 114082706141755868}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: MissileShredderBottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,7 +70,7 @@ GameObject:
   - component: {fileID: 4191813695361690}
   - component: {fileID: 61096381757106792}
   - component: {fileID: 114762739022017130}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: MissileShredderLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 4198855459231952}
   - component: {fileID: 61071929641533634}
   - component: {fileID: 114056743998436114}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: MissileShredderRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,8 +100,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1434531583228326}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -110.268906, y: -57.259377, z: 3.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4509773694429752}

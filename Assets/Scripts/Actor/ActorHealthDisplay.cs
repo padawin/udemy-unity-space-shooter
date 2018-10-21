@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerHealthDisplay : MonoBehaviour {
+public class ActorHealthDisplay : MonoBehaviour {
 	[SerializeField] ActorHealth heathToWatch;
 	float maxSize;
 

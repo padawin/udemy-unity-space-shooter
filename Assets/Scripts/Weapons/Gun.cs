@@ -15,10 +15,12 @@ public abstract class Gun : MonoBehaviour {
 				gunSound, Camera.main.transform.position, soundVolume
 			);
 		}
-		Quaternion rotation = Quaternion.identity;
-		rotation.z = Mathf.Acos(gunDirection.y) * 180 / Mathf.PI;
+		Quaternion rotation = Quaternion.Euler(
+			0, 0,
+			Mathf.Atan2(gunDirection.y, gunDirection.x) * 180 / Mathf.PI
+		);
 		GameObject laser = Instantiate(laserPrefab, transform.position, rotation);
-		laser.GetComponent<Laser>().setVelocity(gunDirection);
+		laser.GetComponent<Ammo>().setVelocity(gunDirection);
 	}
 
 	public abstract void fire();

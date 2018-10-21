@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyFireContinuous : MonoBehaviour {
+	Player player;
 	Gun gun;
 	float timeToNextShot = 0;
 	[SerializeField] float minTimeBetweenShots = 0.2f;
@@ -12,10 +13,15 @@ public class EnemyFireContinuous : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		gun = GetComponentInChildren<Gun>();
+		player = FindObjectOfType<Player>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		if (!player) {
+			return;
+		}
+
 		timeToNextShot -= Time.deltaTime;
 		if (timeToNextShot <= 0f) {
 			gun.fire();

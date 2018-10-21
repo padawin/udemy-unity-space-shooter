@@ -9,7 +9,7 @@ public class EnemyFireOnSight : MonoBehaviour {
 	void Start() {
 		PlayerMovement pm = FindObjectOfType<PlayerMovement>();
 		if (pm) {
-			player = FindObjectOfType<PlayerMovement>().GetComponent<CircleCollider2D>();
+			player = FindObjectOfType<Player>().GetComponent<CircleCollider2D>();
 		}
 		gun = GetComponentInChildren<Gun>();
 	}

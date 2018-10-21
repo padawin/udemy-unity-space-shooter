@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyDeath : MonoBehaviour {
 	ActorHealth enemyHealth;
 	[SerializeField] GameObject explosion;
+	[SerializeField] int points = 0;
 
 	// Use this for initialization
 	void Start () {
@@ -17,6 +18,7 @@ public class EnemyDeath : MonoBehaviour {
 			return;
 		}
 
+		FindObjectOfType<GameSession>().addPoints(points);
 		Destroy(gameObject);
 		Instantiate(explosion, transform.position, transform.rotation);
 	}

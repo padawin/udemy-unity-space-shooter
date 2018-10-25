@@ -9,14 +9,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 398364e359a8f9645ae086ed2ab99532, type: 3}
-  m_Name: FirstWave
+  m_Name: FirstEnemyWave 3
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 1156274871283732, guid: 761260271e5e24d458f5227283a96ba5,
     type: 2}
   path: {fileID: 1497315733513548, guid: 753225d2a15af154789756eda0901050, type: 2}
   timeBetweenSpawn: 0.5
   spawnRandomFactor: 0.3
-  numberOfEnemies: 5
+  numberOfEnemies: 9
   enemiesSpeed: 5
-  _waitUntilDefeated: 1
+  _waitUntilDefeated: 0
   _destroyAtArrival: 1

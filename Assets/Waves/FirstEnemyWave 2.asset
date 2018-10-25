@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 398364e359a8f9645ae086ed2ab99532, type: 3}
+  m_Name: FirstEnemyWave 2
+  m_EditorClassIdentifier: 
+  enemyPrefab: {fileID: 1156274871283732, guid: 761260271e5e24d458f5227283a96ba5,
+    type: 2}
+  path: {fileID: 1497315733513548, guid: e61c24717c13048bda151d76082a9d5e, type: 2}
+  timeBetweenSpawn: 0.5
+  spawnRandomFactor: 0.3
+  numberOfEnemies: 7
+  enemiesSpeed: 5
+  _waitUntilDefeated: 0
+  _destroyAtArrival: 1

@@ -25,6 +25,7 @@ public class EnemySpawner : MonoBehaviour {
 		List<GameObject> enemies = new List<GameObject>();
 		int numberOfEnemies = waveConfig.getNumberOfEnemies();
 		for (int spawnedEnemies = 0; spawnedEnemies < numberOfEnemies; spawnedEnemies++) {
+			yield return new WaitForSeconds(waveConfig.getTimeBeforeNextEnemy());
 			var enemy = Instantiate(
 				waveConfig.getEnemyPrefab(),
 				waveConfig.getWaypoints()[0].transform.position,
@@ -32,7 +33,6 @@ public class EnemySpawner : MonoBehaviour {
 			);
 			enemy.GetComponent<EnemyPathFollower>().setWaveConfig(waveConfig);
 			enemies.Add(enemy);
-			yield return new WaitForSeconds(waveConfig.getTimeBeforeNextEnemy());
 		}
 		if (waveConfig.waitUntilDefeated()) {
 			yield return new WaitUntil(() => !enemies.Any(x => x != null));

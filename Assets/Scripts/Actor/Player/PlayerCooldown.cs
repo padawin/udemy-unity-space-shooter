@@ -23,6 +23,10 @@ public class PlayerCooldown : MonoBehaviour {
 		return maxCooldown;
 	}
 
+	public bool isOverheating() {
+		return cooldown > maxCooldown;
+	}
+
 	void Start() {
 		cooldown = 0;
 	}

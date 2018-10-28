@@ -161,6 +161,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldownToWatch: {fileID: 2074900017}
+  coldColor: {r: 0.5131782, g: 0.9433962, b: 0.36489856, a: 1}
+  hotColor: {r: 1, g: 0.08504289, b: 0.05660379, a: 1}
+  overHeatColor: {r: 0.5849056, g: 0.033107873, b: 0.033107873, a: 1}
 --- !u!114 &112322601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,7 +183,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 8e12116beb9833e4fb676aba5aae4a7f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fa795c1c2abb0bd49b2484fd4bd7691a, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1

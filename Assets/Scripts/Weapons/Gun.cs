@@ -9,7 +9,18 @@ public abstract class Gun : MonoBehaviour {
 	[SerializeField] AudioClip gunSound;
 	[SerializeField][Range(0, 1)] float soundVolume = 1;
 
+	PlayerCooldown cooldown;
+	[SerializeField] int cooldownValue;
+
+	protected void Start() {
+		cooldown = GetComponent<PlayerCooldown>();
+	}
+
 	protected void _fire() {
+		if (cooldown && cooldown.getCooldown() + cooldownValue > cooldown.getMaxCooldown()) {
+			return;
+		}
+
 		if (gunSound) {
 			AudioSource.PlayClipAtPoint(
 				gunSound, Camera.main.transform.position, soundVolume
@@ -21,6 +32,9 @@ public abstract class Gun : MonoBehaviour {
 		);
 		GameObject laser = Instantiate(laserPrefab, transform.position, rotation);
 		laser.GetComponent<Ammo>().setVelocity(gunDirection);
+		if (cooldown) {
+			cooldown.increase(cooldownValue);
+		}
 	}
 
 	public abstract void fire();

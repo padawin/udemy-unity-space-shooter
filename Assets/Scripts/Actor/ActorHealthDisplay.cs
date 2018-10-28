@@ -16,7 +16,7 @@ public class ActorHealthDisplay : MonoBehaviour {
 		float width = Mathf.Max(
 			0,
 			healthToWatch.getHealth() * maxSize / healthToWatch.getMaxHealth()
-			);
+		);
 		Vector2 newSize = new Vector2(width, transform.localScale.y);
 		transform.localScale = newSize;
 	}

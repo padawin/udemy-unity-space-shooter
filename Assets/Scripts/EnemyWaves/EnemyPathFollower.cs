@@ -5,9 +5,9 @@ using UnityEngine;
 public class EnemyPathFollower : MonoBehaviour {
 	int currentWayPoint = 0;
 
-    WaveConfig waveConfig;
+    SingleWave waveConfig;
 
-	public void setWaveConfig(WaveConfig waveConfig) {
+	public void setWaveConfig(SingleWave waveConfig) {
 		this.waveConfig = waveConfig;
 	}
 
@@ -31,7 +31,7 @@ public class EnemyPathFollower : MonoBehaviour {
 	void Start () {
 		placeOnPath();
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 		var next = getNextWayPoint();

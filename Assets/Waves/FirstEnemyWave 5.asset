@@ -8,7 +8,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 398364e359a8f9645ae086ed2ab99532, type: 3}
+  m_Script: {fileID: 11500000, guid: f91185feea2c94cbd83f76a40c2a26ad, type: 3}
   m_Name: FirstEnemyWave 5
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 1156274871283732, guid: 761260271e5e24d458f5227283a96ba5,
@@ -18,5 +18,5 @@ MonoBehaviour:
   spawnRandomFactor: 0.3
   numberOfEnemies: 15
   enemiesSpeed: 5
-  _waitUntilDefeated: 0
+  _waitUntilDefeated: 1
   _destroyAtArrival: 1

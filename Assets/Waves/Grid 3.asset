@@ -9,14 +9,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f91185feea2c94cbd83f76a40c2a26ad, type: 3}
-  m_Name: FirstEnemyWave 1
+  m_Name: Grid 3
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 1156274871283732, guid: 761260271e5e24d458f5227283a96ba5,
     type: 2}
-  path: {fileID: 1497315733513548, guid: 753225d2a15af154789756eda0901050, type: 2}
-  timeBetweenSpawn: 0.5
-  spawnRandomFactor: 0.3
-  numberOfEnemies: 5
-  enemiesSpeed: 5
+  path: {fileID: 1497315733513548, guid: ca2db809d2da64b459c4f1b51c6e688a, type: 2}
+  timeBetweenSpawn: 0.1
+  spawnRandomFactor: 0
+  numberOfEnemies: 1
+  enemiesSpeed: 15
   _waitUntilDefeated: 0
-  _destroyAtArrival: 1
+  _destroyAtArrival: 0

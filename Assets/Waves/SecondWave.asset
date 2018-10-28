@@ -8,10 +8,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 398364e359a8f9645ae086ed2ab99532, type: 3}
+  m_Script: {fileID: 11500000, guid: f91185feea2c94cbd83f76a40c2a26ad, type: 3}
   m_Name: SecondWave
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 1156274871283732, guid: 8e1e3dee14be4be4a9cfd3c188b420c9,
+  enemyPrefab: {fileID: 1156274871283732, guid: 761260271e5e24d458f5227283a96ba5,
     type: 2}
   path: {fileID: 1899599780879180, guid: feed6105775910e4ea6a0907d8b21597, type: 2}
   timeBetweenSpawn: 0.5

@@ -162,7 +162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c74c1594c9544804d8d6a9b77a198154, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 300
 --- !u!114 &114708122006903522
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -179,6 +179,7 @@ MonoBehaviour:
   gunDirection: {x: 0, y: -1}
   gunSound: {fileID: 8300000, guid: 68b49238ee980024c85cda4aef040c6b, type: 3}
   soundVolume: 0.27
+  cooldownValue: 0
 --- !u!114 &114738769085709304
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -201,6 +202,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20b6e687ec9cb454caae31aedd0068d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  guns:
+  - {fileID: 114708122006903522}
   minTimeBetweenShots: 1
   maxTimeBetweenShots: 5
 --- !u!114 &114920632403602608

@@ -296,7 +296,7 @@ MonoBehaviour:
   gunSound: {fileID: 8300000, guid: f86ea07708f5480438719a15c355ba04, type: 3}
   soundVolume: 0.3
   cooldownValue: 0
-  timeBetweenShots: 2
+  timeBetweenShots: 1
 --- !u!114 &114234719323212126
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -404,7 +404,7 @@ MonoBehaviour:
   gunSound: {fileID: 8300000, guid: f86ea07708f5480438719a15c355ba04, type: 3}
   soundVolume: 0.3
   cooldownValue: 0
-  timeBetweenShots: 2
+  timeBetweenShots: 1
 --- !u!114 &114815883819790616
 MonoBehaviour:
   m_ObjectHideFlags: 1

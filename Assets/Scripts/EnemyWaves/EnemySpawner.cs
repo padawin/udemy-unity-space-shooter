@@ -23,16 +23,13 @@ public class EnemySpawner : MonoBehaviour {
 
 	IEnumerator spawnEnemies(WaveConfig waveConfig) {
 		List<GameObject> enemies = new List<GameObject>();
-		int numberOfEnemies = waveConfig.getNumberOfEnemies();
-		for (int spawnedEnemies = 0; spawnedEnemies < numberOfEnemies; spawnedEnemies++) {
+		for (
+			int spawnedEnemies = 0;
+			spawnedEnemies < waveConfig.getNumberOfEnemies();
+			spawnedEnemies++
+		) {
 			yield return new WaitForSeconds(waveConfig.getTimeBeforeNextEnemy());
-			var enemy = Instantiate(
-				waveConfig.getEnemyPrefab(),
-				waveConfig.getWaypoints()[0].transform.position,
-				Quaternion.identity
-			);
-			enemy.GetComponent<EnemyPathFollower>().setWaveConfig(waveConfig);
-			enemies.Add(enemy);
+			enemies.Add(waveConfig.spawnEnemy());
 		}
 		if (waveConfig.waitUntilDefeated()) {
 			yield return new WaitUntil(() => !enemies.Any(x => x != null));

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3598b526f5feb4a83ba50abaa605cfce, type: 3}
+  m_Name: Grid
+  m_EditorClassIdentifier: 
+  _waitUntilDefeated: 1
+  _destroyAtArrival: 0
+  waves:
+  - {fileID: 11400000, guid: f4384e67fea5e432eb72f4b8cd15377f, type: 2}
+  - {fileID: 11400000, guid: e13fa9a48016040ecba63d6c44513a7a, type: 2}
+  - {fileID: 11400000, guid: f4a532d6f805a4b2c824b3c02f3d8ce6, type: 2}
+  - {fileID: 11400000, guid: 2143cbddb54ca4a4f849a280923049e9, type: 2}
+  - {fileID: 11400000, guid: e02cf3dd44b264fa2911881268c21f9b, type: 2}
+  - {fileID: 11400000, guid: 1962a4711212c4c90aa551efb06d5fa2, type: 2}
+  - {fileID: 11400000, guid: d09e137089a404b748d6bf0d5e2bf64a, type: 2}
+  - {fileID: 11400000, guid: b54c54227559d4c19aebe9da62408b37, type: 2}

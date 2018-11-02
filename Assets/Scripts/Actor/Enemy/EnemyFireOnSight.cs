@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class EnemyFireOnSight : MonoBehaviour {
 	CircleCollider2D player;
-	Gun gun;
+	[SerializeField] List<Gun> guns;
 
 	void Start() {
 		PlayerMovement pm = FindObjectOfType<PlayerMovement>();
 		if (pm) {
 			player = FindObjectOfType<Player>().GetComponent<CircleCollider2D>();
 		}
-		gun = GetComponentInChildren<Gun>();
 	}
 
 	void Update() {
@@ -19,15 +18,17 @@ public class EnemyFireOnSight : MonoBehaviour {
 			return;
 		}
 
-		if (
-			transform.position.x > player.transform.position.x - player.radius
-			&&
-			transform.position.x < player.transform.position.x + player.radius
-		) {
-			gun.fire();
-		}
-		else {
-			gun.stopFire();
+		foreach (var gun in guns) {
+			if (
+				gun.transform.position.x > player.transform.position.x - player.radius
+				&&
+				gun.transform.position.x < player.transform.position.x + player.radius
+			) {
+				gun.fire();
+			}
+			else {
+				gun.stopFire();
+			}
 		}
 	}
 }

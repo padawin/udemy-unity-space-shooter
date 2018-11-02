@@ -166,6 +166,7 @@ MonoBehaviour:
   gunDirection: {x: 0, y: -1}
   gunSound: {fileID: 8300000, guid: f86ea07708f5480438719a15c355ba04, type: 3}
   soundVolume: 0.3
+  cooldownValue: 0
   timeBetweenShots: 2
 --- !u!114 &114390386359255698
 MonoBehaviour:
@@ -214,6 +215,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed0dcf915cd9a3945ab631d694e86497, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  guns:
+  - {fileID: 114357967021661620}
 --- !u!212 &212150317196513548
 SpriteRenderer:
   m_ObjectHideFlags: 1

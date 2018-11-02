@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c2c2fab6bc17d24d9b98eca6d9a5b6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damages: 30
+  damages: 10
   explosion: {fileID: 1970807212555422, guid: ffe2820729218624e99d52fcb350131b, type: 2}
 --- !u!114 &114234922905255698
 MonoBehaviour:

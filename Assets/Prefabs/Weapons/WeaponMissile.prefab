@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4363757689757476}
   - component: {fileID: 114084424309747064}
   m_Layer: 0
-  m_Name: WeaponCanon
+  m_Name: WeaponMissile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -53,6 +53,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laserPrefab: {fileID: 0}
   gunDirection: {x: 0, y: 0}
-  gunSound: {fileID: 8300000, guid: f86ea07708f5480438719a15c355ba04, type: 3}
+  gunSound: {fileID: 0}
   soundVolume: 0.3
-  timeBetweenShots: 2
+  cooldownValue: 0
+  timeBetweenShots: 4

@@ -7,20 +7,22 @@ using UnityEngine.UI;
 public class Menu : MonoBehaviour {
 	[SerializeField] Color32 activeItemColor;
 	[SerializeField] Color32 inactiveItemColor;
-	[SerializeField] GameObject[] items;
+	List<GameObject> items;
 	int currentItemIndex = 0;
 
 	// Use this for initialization
 	void Start () {
-		setCurrentItem(items[currentItemIndex]);
-		for (int i = 0; i < items.Length; i++) {
-			items[i].GetComponent<MenuItem>().setMenu(this);
+		items = new List<GameObject>();
+		foreach (Transform item in transform) {
+			item.GetComponent<MenuItem>().setMenu(this);
+			items.Add(item.gameObject);
 		}
+		setCurrentItem(items[currentItemIndex]);
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetAxis("Vertical") < 0 && currentItemIndex < items.Length - 1) {
+		if (Input.GetAxis("Vertical") < 0 && currentItemIndex < items.Count - 1) {
 			currentItemIndex = currentItemIndex + 1;
 			setCurrentItem(items[currentItemIndex]);
 		}
@@ -35,7 +37,7 @@ public class Menu : MonoBehaviour {
 
 	public void setCurrentItem(GameObject item) {
 		currentItemIndex = -1;
-		for (int i = 0; i < items.Length; i++) {
+		for (int i = 0; i < items.Count; i++) {
 			TextMeshProUGUI text = items[i].GetComponentInChildren<TextMeshProUGUI>();
 			Image icon = items[i].GetComponentInChildren<Image>(true);
 			if (items[i] == item) {

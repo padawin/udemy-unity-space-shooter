@@ -27,19 +27,21 @@ public class PlayerCooldownDisplay : MonoBehaviour {
 		if (ratio == 0.0f) {
 			return;
 		}
-		float r, g, b;
+		float r, g, b, a;
 		if (cooldownToWatch.isOverheating()) {
 			r = overHeatColor.r;
 			g = overHeatColor.g;
 			b = overHeatColor.b;
+			a = overHeatColor.a;
 		}
 		else {
 			// @TODO use lerp
 			r = ratio * (hotColor.r - coldColor.r) + coldColor.r;
 			g = ratio * (hotColor.g - coldColor.g) + coldColor.g;
 			b = ratio * (hotColor.b - coldColor.b) + coldColor.b;
+			a = ratio * (hotColor.a - coldColor.a) + coldColor.a;
 		}
-		Color c = new Color(r, g, b, image.color.a);
+		Color c = new Color(r, g, b, a);
 		image.color = c;
 	}
 }

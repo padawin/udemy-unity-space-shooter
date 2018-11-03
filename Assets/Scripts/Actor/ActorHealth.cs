@@ -14,6 +14,14 @@ public class ActorHealth : MonoBehaviour {
 		health = maxHealth;
 	}
 
+	public void increaseHealth(int val) {
+		health += val;
+	}
+
+	public void increaseMaxHealth(int val) {
+		maxHealth += val;
+	}
+
 	public void hit(DamageDealer damageDealer) {
 		health -= damageDealer.getDamages();
 	}

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3598b526f5feb4a83ba50abaa605cfce, type: 3}
+  m_Name: Pyramide
+  m_EditorClassIdentifier: 
+  _waitUntilDefeated: 1
+  _destroyAtArrival: 0
+  waves:
+  - {fileID: 11400000, guid: 86a3b97bb335d4a9e93582e3d6c1462a, type: 2}
+  - {fileID: 11400000, guid: f59c3c7b32f3f42aabb18e9ba64b2740, type: 2}
+  - {fileID: 11400000, guid: 3e1607256bc854338833fdf4400f51ed, type: 2}
+  - {fileID: 11400000, guid: a100a85c316e84abd8091f54b197c0bd, type: 2}
+  - {fileID: 11400000, guid: 45328c4b240bd4d808ca060e08c9e6c4, type: 2}
+  currentWave: 0

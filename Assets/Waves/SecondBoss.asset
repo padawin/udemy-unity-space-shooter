@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f91185feea2c94cbd83f76a40c2a26ad, type: 3}
+  m_Name: SecondBoss
+  m_EditorClassIdentifier: 
+  _waitUntilDefeated: 1
+  _destroyAtArrival: 0
+  enemyPrefab: {fileID: 1307502324009514, guid: bfce047b5b07146c295181424daac0f8,
+    type: 2}
+  path: {fileID: 1497315733513548, guid: 9a48116260399a34d9f638354c591ae4, type: 2}
+  timeBetweenSpawn: 0.5
+  spawnRandomFactor: 0.5
+  numberOfEnemies: 1
+  enemiesSpeed: 2

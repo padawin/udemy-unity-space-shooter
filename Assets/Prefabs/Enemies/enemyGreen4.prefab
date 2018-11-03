@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c74c1594c9544804d8d6a9b77a198154, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 300
+  maxHealth: 400
 --- !u!114 &114381892428759004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -164,7 +164,7 @@ MonoBehaviour:
   guns:
   - {fileID: 114881861162831210}
   minTimeBetweenShots: 0.2
-  maxTimeBetweenShots: 3
+  maxTimeBetweenShots: 1
 --- !u!114 &114412393954319714
 MonoBehaviour:
   m_ObjectHideFlags: 1

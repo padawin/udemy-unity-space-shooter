@@ -5,7 +5,6 @@ using UnityEngine;
 public class EnemyFireContinuous : MonoBehaviour {
 	Player player;
 	[SerializeField] List<Gun> guns;
-	Renderer myRenderer;
 	float timeToNextShot = 0;
 	[SerializeField] float minTimeBetweenShots = 0.2f;
 	[SerializeField] float maxTimeBetweenShots = 1.5f;
@@ -13,7 +12,6 @@ public class EnemyFireContinuous : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		player = FindObjectOfType<Player>();
-		myRenderer = GetComponent<Renderer>();
 		setTimeToNextShot();
 	}
 

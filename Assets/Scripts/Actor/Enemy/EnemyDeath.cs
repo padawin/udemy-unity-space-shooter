@@ -6,9 +6,11 @@ public class EnemyDeath : MonoBehaviour {
 	ActorHealth enemyHealth;
 	[SerializeField] GameObject explosion;
 	[SerializeField] int points = 0;
+	GameSession gameSession;
 
 	// Use this for initialization
 	void Start () {
+		gameSession = FindObjectOfType<GameSession>();
 		enemyHealth = GetComponent<ActorHealth>();
 	}
 
@@ -18,7 +20,7 @@ public class EnemyDeath : MonoBehaviour {
 			return;
 		}
 
-		FindObjectOfType<GameSession>().addPoints(points);
+		gameSession.addPoints(points);
 		Destroy(gameObject);
 		Instantiate(explosion, transform.position, transform.rotation);
 	}

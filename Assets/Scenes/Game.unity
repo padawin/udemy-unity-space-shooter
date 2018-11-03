@@ -251,7 +251,7 @@ Prefab:
     - target: {fileID: 114042161720627086, guid: 70550fdb1b8f29441ab191e099c9dd1e,
         type: 2}
       propertyPath: waveConfigs.Array.size
-      value: 8
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 4413917457287670, guid: 70550fdb1b8f29441ab191e099c9dd1e, type: 2}
       propertyPath: m_LocalPosition.x
@@ -335,13 +335,13 @@ Prefab:
         type: 2}
       propertyPath: waveConfigs.Array.data[8]
       value: 
-      objectReference: {fileID: 11400000, guid: 2143cbddb54ca4a4f849a280923049e9,
+      objectReference: {fileID: 11400000, guid: e5ed5471e62b2404a896da953a867e5c,
         type: 2}
     - target: {fileID: 114042161720627086, guid: 70550fdb1b8f29441ab191e099c9dd1e,
         type: 2}
       propertyPath: waveConfigs.Array.data[9]
       value: 
-      objectReference: {fileID: 11400000, guid: e02cf3dd44b264fa2911881268c21f9b,
+      objectReference: {fileID: 11400000, guid: abc2a32f06f97418d93769b6ec5a87ac,
         type: 2}
     - target: {fileID: 114042161720627086, guid: 70550fdb1b8f29441ab191e099c9dd1e,
         type: 2}
@@ -359,19 +359,19 @@ Prefab:
         type: 2}
       propertyPath: waveConfigs.Array.data[10]
       value: 
-      objectReference: {fileID: 11400000, guid: 1962a4711212c4c90aa551efb06d5fa2,
+      objectReference: {fileID: 11400000, guid: 88b956c4f9e4f49b58fde30973845cc9,
         type: 2}
     - target: {fileID: 114042161720627086, guid: 70550fdb1b8f29441ab191e099c9dd1e,
         type: 2}
       propertyPath: waveConfigs.Array.data[11]
       value: 
-      objectReference: {fileID: 11400000, guid: d09e137089a404b748d6bf0d5e2bf64a,
+      objectReference: {fileID: 11400000, guid: 6338ab7fd17774f7b974946540facdb9,
         type: 2}
     - target: {fileID: 114042161720627086, guid: 70550fdb1b8f29441ab191e099c9dd1e,
         type: 2}
       propertyPath: waveConfigs.Array.data[12]
       value: 
-      objectReference: {fileID: 11400000, guid: b54c54227559d4c19aebe9da62408b37,
+      objectReference: {fileID: 11400000, guid: 80d3f645f6ab6493f830ce3bef5d7fb2,
         type: 2}
     - target: {fileID: 114042161720627086, guid: 70550fdb1b8f29441ab191e099c9dd1e,
         type: 2}
@@ -382,13 +382,24 @@ Prefab:
         type: 2}
       propertyPath: waveConfigs.Array.data[13]
       value: 
-      objectReference: {fileID: 11400000, guid: 0ac1037f9b4ad478993f87bd33480ed6,
+      objectReference: {fileID: 11400000, guid: 63c272d3502f24287a0606d75a08dbe8,
         type: 2}
     - target: {fileID: 114042161720627086, guid: 70550fdb1b8f29441ab191e099c9dd1e,
         type: 2}
       propertyPath: waveConfigs.Array.data[14]
       value: 
-      objectReference: {fileID: 11400000, guid: 4c325156449844ba791ccb53608620e8,
+      objectReference: {fileID: 11400000, guid: e6bb3ebd0b7f545eb91f97f72f9cf280,
+        type: 2}
+    - target: {fileID: 114042161720627086, guid: 70550fdb1b8f29441ab191e099c9dd1e,
+        type: 2}
+      propertyPath: startWaveIndex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114042161720627086, guid: 70550fdb1b8f29441ab191e099c9dd1e,
+        type: 2}
+      propertyPath: waveConfigs.Array.data[15]
+      value: 
+      objectReference: {fileID: 11400000, guid: 53086633edfc1452999a1dd40b8d7db4,
         type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70550fdb1b8f29441ab191e099c9dd1e, type: 2}
@@ -702,6 +713,16 @@ Prefab:
         type: 2}
       propertyPath: cooldownValue
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954383506739088, guid: 721bfda577002334c992a32a254c8b5b,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114845736766140040, guid: 721bfda577002334c992a32a254c8b5b,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 721bfda577002334c992a32a254c8b5b, type: 2}

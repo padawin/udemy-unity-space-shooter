@@ -33,8 +33,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1925427217577654}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -110.268906, y: -57.259377, z: 3.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -51,5 +51,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c19bcc707fe56134d8284d04206e9528, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waveConfigs: []
+  waveConfigs:
+  - {fileID: 11400000, guid: 8d83e985d5a29b44083ac6aab21be6e1, type: 2}
+  - {fileID: 11400000, guid: c8a68ef3f9159450799d075f3a82c200, type: 2}
+  - {fileID: 11400000, guid: 75e87fd83a0124016a95678b8343663e, type: 2}
+  - {fileID: 11400000, guid: b77510916f7434501bf2490dbfc4811d, type: 2}
+  - {fileID: 11400000, guid: d8a27fba9e9ec48b8a047151bd4a5465, type: 2}
+  - {fileID: 11400000, guid: b6702bcca493948e083724711cc9214e, type: 2}
+  - {fileID: 11400000, guid: 0ac1037f9b4ad478993f87bd33480ed6, type: 2}
+  - {fileID: 11400000, guid: 4c325156449844ba791ccb53608620e8, type: 2}
   looping: 0

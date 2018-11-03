@@ -13,7 +13,7 @@ public class GroupWave : WaveConfig {
 		spawnedEnemiesInWave++;
 		if (spawnedEnemiesInWave == waves[currentWave].getNumberOfEnemies()) {
 			spawnedEnemiesInWave = 0;
-			currentWave++;
+			currentWave = (currentWave + 1) % waves.Count;
 		}
 		return enemy;
 	}

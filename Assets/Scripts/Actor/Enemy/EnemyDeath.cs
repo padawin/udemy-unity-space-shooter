@@ -11,7 +11,7 @@ public class EnemyDeath : MonoBehaviour {
 	void Start () {
 		enemyHealth = GetComponent<ActorHealth>();
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 		if (enemyHealth.getHealth() > 0) {

@@ -10,7 +10,7 @@ public class BonusSpawner : MonoBehaviour {
 			return;
 		}
 
-		int bonusIndex = Random.Range(0, bonuses.Count - 1);
+		int bonusIndex = Random.Range(0, bonuses.Count);
 		Instantiate(bonuses[bonusIndex], position, Quaternion.identity);
 	}
 }

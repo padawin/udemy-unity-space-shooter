@@ -6,11 +6,15 @@ using System.Linq;
 public class EnemySpawner : MonoBehaviour {
 	[SerializeField] List<WaveConfig> waveConfigs;
 	int startWaveIndex = 0;
+	int currentWaveIndex = 0;
 	[SerializeField] bool looping = false;
 	[SerializeField] SceneLoader sceneLoader;
+	GameSession gameSession;
 
 	// Use this for initialization
 	IEnumerator Start () {
+		gameSession = FindObjectOfType<GameSession>();
+		startWaveIndex = gameSession.getStartWaveIndex();
 		do {
 			yield return StartCoroutine(spawnWaves());
 		} while (looping);
@@ -18,10 +22,16 @@ public class EnemySpawner : MonoBehaviour {
 	}
 
 	IEnumerator spawnWaves() {
-		for (int waveIndex = startWaveIndex; waveIndex < waveConfigs.Count; waveIndex++) {
-			yield return StartCoroutine(spawnEnemies(waveConfigs[waveIndex]));
-        }
-    }
+		for (
+			currentWaveIndex = startWaveIndex;
+			currentWaveIndex < waveConfigs.Count;
+			currentWaveIndex++
+		) {
+			yield return StartCoroutine(
+				spawnEnemies(waveConfigs[currentWaveIndex])
+			);
+		}
+	}
 
 	IEnumerator spawnEnemies(WaveConfig waveConfig) {
 		List<GameObject> enemies = new List<GameObject>();
@@ -36,5 +46,13 @@ public class EnemySpawner : MonoBehaviour {
 		if (waveConfig.waitUntilDefeated()) {
 			yield return new WaitUntil(() => !enemies.Any(x => x != null));
 		}
+	}
+
+	public void setStartWaveIndex(int waveIndex) {
+		startWaveIndex = waveIndex;
+	}
+
+	public int getCurrentWave() {
+		return currentWaveIndex;
 	}
 }

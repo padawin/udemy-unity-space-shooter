@@ -101,8 +101,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5289253f033d1ea46a3218352a62f6d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!114 &114597550744034582
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -112,8 +112,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 42cb68f87eb6ebb4f8dd2d154b92768b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!114 &114597579657643316
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -123,8 +123,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aa1c6c9c590102f4fbe9c85b214f7d51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   laserPrefab: {fileID: 1766133261723408, guid: b210dd9ad7e3123478c5e5b97c4ac8b1,
     type: 2}
   gunDirection: {x: 0, y: 1}
@@ -141,8 +141,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 717201210ab5b1c40bd17d29ac544676, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   speed: 15
 --- !u!114 &114845736766140040
 MonoBehaviour:
@@ -153,8 +153,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7fdbf7fcafcc5cb4c9c6df575cc409b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   sceneLoader: {fileID: 0}
   explosion: {fileID: 1237345852854864, guid: 040db3b32ae38fc4ab18031601d2a18e, type: 2}
   timeBeforeGameOver: 3
@@ -167,8 +167,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2a94b0c6667844adc8efeb31a9b7d7ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   cooldownRate: 1
   maxCooldown: 100
   cooldownOverhead: 150
@@ -182,9 +182,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c74c1594c9544804d8d6a9b77a198154, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 200
+  m_Name:
+  m_EditorClassIdentifier:
+  maxHealthInitial: 200
 --- !u!212 &212544765034806724
 SpriteRenderer:
   m_ObjectHideFlags: 1

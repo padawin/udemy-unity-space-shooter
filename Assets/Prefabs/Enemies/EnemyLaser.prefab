@@ -22,8 +22,8 @@ GameObject:
   - component: {fileID: 212946301491623864}
   - component: {fileID: 114234922905255698}
   - component: {fileID: 50624592788173214}
-  - component: {fileID: 61699021461592440}
   - component: {fileID: 114088884557709262}
+  - component: {fileID: 61576221805182828}
   m_Layer: 11
   m_Name: EnemyLaser
   m_TagString: Untagged
@@ -64,7 +64,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &61699021461592440
+--- !u!61 &61576221805182828
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -87,7 +87,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.09, y: 0.54}
+  m_Size: {x: 0.37, y: 0.09}
   m_EdgeRadius: 0
 --- !u!114 &114088884557709262
 MonoBehaviour:

@@ -147,9 +147,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c74c1594c9544804d8d6a9b77a198154, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 500
+  m_Name:
+  m_EditorClassIdentifier:
+  maxHealthInitial: 500
 --- !u!114 &114357967021661620
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -159,8 +159,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aa1c6c9c590102f4fbe9c85b214f7d51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   laserPrefab: {fileID: 1766133261723408, guid: 80d4df8f411985141b75a911d8a247de,
     type: 2}
   gunDirection: {x: 0, y: -1}
@@ -177,8 +177,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fda87e3af982a784f92bbdcefb147253, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   explosion: {fileID: 1237345852854864, guid: 040db3b32ae38fc4ab18031601d2a18e, type: 2}
   points: 200
   bonusProbability: 20
@@ -191,8 +191,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9c3ad91272fa294b99982bc682a5a58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   healthToWatch: {fileID: 114147425844341736}
 --- !u!114 &114738769085709304
 MonoBehaviour:
@@ -203,8 +203,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0a3287b359806af45941f9da36383e30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!114 &114785776561354692
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -214,8 +214,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ed0dcf915cd9a3945ab631d694e86497, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   guns:
   - {fileID: 114357967021661620}
 --- !u!212 &212150317196513548

@@ -3,11 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ActorHealth : MonoBehaviour {
-	[SerializeField] int maxHealth = 100;
+	[SerializeField] int maxHealthInitial = 100;
+	int maxHealth;
 	int health;
 
 	void Start() {
+		if (maxHealth == 0) {
+			maxHealth = maxHealthInitial;
+		}
 		restore();
+	}
+
+	public void setMaxHealth(int extra) {
+		maxHealth = maxHealthInitial + extra;
+	}
+
+	public int getMaxHealthExtra() {
+		return maxHealth - maxHealthInitial;
 	}
 
 	public void restore() {

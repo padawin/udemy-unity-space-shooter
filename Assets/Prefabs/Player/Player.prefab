@@ -42,6 +42,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4731748890787112}
   - component: {fileID: 114597579657643316}
+  - component: {fileID: 114861856378886962}
   m_Layer: 0
   m_Name: WeaponGatling
   m_TagString: Untagged
@@ -129,7 +130,7 @@ MonoBehaviour:
   gunDirection: {x: 0, y: 1}
   gunSound: {fileID: 8300000, guid: 1797120dacd347842b36e7c3b630c93e, type: 3}
   soundVolume: 0.1
-  cooldownValue: 0
+  cooldownValue: 10
   timeBetweenShots: 0.1
 --- !u!114 &114671946356185816
 MonoBehaviour:
@@ -157,6 +158,21 @@ MonoBehaviour:
   sceneLoader: {fileID: 0}
   explosion: {fileID: 1237345852854864, guid: 040db3b32ae38fc4ab18031601d2a18e, type: 2}
   timeBeforeGameOver: 3
+--- !u!114 &114861856378886962
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1290350124428924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a94b0c6667844adc8efeb31a9b7d7ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldownRate: 1
+  maxCooldown: 100
+  cooldownOverhead: 150
+  cooldown: 0
 --- !u!114 &114954383506739088
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -168,7 +184,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c74c1594c9544804d8d6a9b77a198154, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 200
 --- !u!212 &212544765034806724
 SpriteRenderer:
   m_ObjectHideFlags: 1

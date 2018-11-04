@@ -7,7 +7,19 @@ public class ActorHealth : MonoBehaviour {
 	int health;
 
 	void Start() {
+		restore();
+	}
+
+	public void restore() {
 		health = maxHealth;
+	}
+
+	public void increaseHealth(int val) {
+		health += val;
+	}
+
+	public void increaseMaxHealth(int val) {
+		maxHealth += val;
 	}
 
 	public void hit(DamageDealer damageDealer) {

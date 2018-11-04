@@ -8,6 +8,10 @@ public class PlayerCooldown : MonoBehaviour {
 	[SerializeField] int cooldownOverhead = 150;
 	[SerializeField] int cooldown;
 
+	public void reset() {
+		cooldown = 0;
+	}
+
 	public void increase(int val) {
 		cooldown += val;
 		if (cooldown >= maxCooldown) {
@@ -28,7 +32,7 @@ public class PlayerCooldown : MonoBehaviour {
 	}
 
 	void Start() {
-		cooldown = 0;
+		reset();
 	}
 
 	void Update() {

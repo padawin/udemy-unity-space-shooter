@@ -22,9 +22,9 @@ GameObject:
   - component: {fileID: 212946301491623864}
   - component: {fileID: 114650029974197152}
   - component: {fileID: 50456747037459466}
-  - component: {fileID: 61699021461592440}
   - component: {fileID: 114088884557709262}
   - component: {fileID: 114703073958867554}
+  - component: {fileID: 61428437684595702}
   m_Layer: 12
   m_Name: EnemyMissile
   m_TagString: Untagged
@@ -39,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1766133261723408}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.4426361, y: -0.8851142, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -65,7 +65,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &61699021461592440
+--- !u!61 &61428437684595702
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -88,7 +88,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.51}
+  m_Size: {x: 0.51, y: 0.18}
   m_EdgeRadius: 0
 --- !u!114 &114088884557709262
 MonoBehaviour:

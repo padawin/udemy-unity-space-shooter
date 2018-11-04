@@ -288,8 +288,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aa1c6c9c590102f4fbe9c85b214f7d51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   laserPrefab: {fileID: 1766133261723408, guid: 80d4df8f411985141b75a911d8a247de,
     type: 2}
   gunDirection: {x: 0, y: -1}
@@ -306,8 +306,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fda87e3af982a784f92bbdcefb147253, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   explosion: {fileID: 1237345852854864, guid: 040db3b32ae38fc4ab18031601d2a18e, type: 2}
   points: 5000
   bonusProbability: 100
@@ -320,9 +320,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c74c1594c9544804d8d6a9b77a198154, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 10000
+  m_Name:
+  m_EditorClassIdentifier:
+  maxHealthInitial: 10000
 --- !u!114 &114515724105416840
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -332,8 +332,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cc95419f2f6c8ea4bac48d73ba1fcd0b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   laserPrefab: {fileID: 1766133261723408, guid: 23fdf50aad69be44194160c500b70778,
     type: 2}
   gunDirection: {x: 0, y: -1}
@@ -349,8 +349,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cc95419f2f6c8ea4bac48d73ba1fcd0b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   laserPrefab: {fileID: 1766133261723408, guid: 23fdf50aad69be44194160c500b70778,
     type: 2}
   gunDirection: {x: 0, y: -1}
@@ -366,8 +366,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 20b6e687ec9cb454caae31aedd0068d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   guns:
   - {fileID: 114576065633543488}
   - {fileID: 114515724105416840}
@@ -382,8 +382,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ed0dcf915cd9a3945ab631d694e86497, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   guns:
   - {fileID: 114773732780915922}
   - {fileID: 114207285462172346}
@@ -396,8 +396,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aa1c6c9c590102f4fbe9c85b214f7d51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   laserPrefab: {fileID: 1766133261723408, guid: 80d4df8f411985141b75a911d8a247de,
     type: 2}
   gunDirection: {x: 0, y: -1}
@@ -414,8 +414,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0a3287b359806af45941f9da36383e30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!212 &212474553825922034
 SpriteRenderer:
   m_ObjectHideFlags: 1

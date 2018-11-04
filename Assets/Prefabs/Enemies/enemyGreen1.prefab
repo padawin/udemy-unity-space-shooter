@@ -147,8 +147,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fda87e3af982a784f92bbdcefb147253, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   explosion: {fileID: 1237345852854864, guid: 040db3b32ae38fc4ab18031601d2a18e, type: 2}
   points: 100
   bonusProbability: 20
@@ -161,9 +161,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c74c1594c9544804d8d6a9b77a198154, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 300
+  m_Name:
+  m_EditorClassIdentifier:
+  maxHealthInitial: 300
 --- !u!114 &114708122006903522
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -173,8 +173,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cc95419f2f6c8ea4bac48d73ba1fcd0b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   laserPrefab: {fileID: 1766133261723408, guid: 23fdf50aad69be44194160c500b70778,
     type: 2}
   gunDirection: {x: 0, y: -1}
@@ -190,8 +190,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0a3287b359806af45941f9da36383e30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!114 &114895001270418262
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -201,8 +201,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 20b6e687ec9cb454caae31aedd0068d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   guns:
   - {fileID: 114708122006903522}
   minTimeBetweenShots: 1
@@ -216,8 +216,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9c3ad91272fa294b99982bc682a5a58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   healthToWatch: {fileID: 114384089479804542}
 --- !u!212 &212355389469002118
 SpriteRenderer:

@@ -7,12 +7,14 @@ public class EnemySpawner : MonoBehaviour {
 	[SerializeField] List<WaveConfig> waveConfigs;
 	int startWaveIndex = 0;
 	[SerializeField] bool looping = false;
+	[SerializeField] SceneLoader sceneLoader;
 
 	// Use this for initialization
 	IEnumerator Start () {
 		do {
 			yield return StartCoroutine(spawnWaves());
 		} while (looping);
+		sceneLoader.loadNextScene();
 	}
 
 	IEnumerator spawnWaves() {
